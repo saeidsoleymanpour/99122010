@@ -20,7 +20,7 @@ $number_of_hours = 4;
                 cursor:pointer;
             }
         </style>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.24/sweetalert2.all.js"></script>
     </head>
     <?php
     require('./lessons.php');
@@ -72,10 +72,9 @@ $number_of_hours = 4;
             $('.lesson').on('click',function(){
                 var text = $(this).html();
                 Swal.fire({
-                title: 'Alert Title',
+                icon: 'success',
                 text: text,
-                icon: 'warning',
-                confirmButtonText: 'OK'
+                title: 'success',
                 });
             })
         })
